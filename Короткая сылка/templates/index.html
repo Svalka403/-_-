@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    </style>
+</head>
+<body>
+	<form action="/" method="post">
+        <div align="center"><input type="text" name="Url" id="Url" placeholder="Введите Url" style="width: 400px"></div>
+		<div align="center"><input type="submit" value="Сгенерировать ссылку"></div>
+    </form>
+
+
+        {% if error %}
+            <div align="center" style="color: red;">
+                {{ error }}
+            </div>
+        {% elif result %}
+            <div align="center">
+				коротнкая сылка - <a href="{{result}}">{{result}}</a>
+            </div>
+        {% endif %}
+    
+</body>
+</html>

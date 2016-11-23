@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Решение квадратного уравнения</title>
+	<style>
+		div{
+			font-weight: bold;
+		}
+	</style>
+
+</head>
+<body>
+    <form action="/" method="post">
+        <div align="center">Квадратное уравнение</div>
+		<div align="center">a*x^2+b*x+c=0</div>
+        <div align="center">a = <input type="text" name="a"></div>
+		<div align="center">b = <input type="text" name="b"></div>
+		<div align="center">c = <input type="text" name="c"></div>
+		<div align="center"><input type="submit" value="Решить"></div>
+    </form>
+	
+        {% if error %}
+            <div align="center" style="color: red;">
+                {{ error }}
+            </div>
+        {% elif result %}
+            <div align="center">
+				<p>Корни уравнение:</p>
+                <p>x1 = {{ otvet1 }}</p>
+                <p>x2 = {{ otvet2 }}</p>
+            </div>
+        {% endif %}
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+h1{
+    border-width: 0pt 0pt 1pt 0pt;
+    border-style: solid;
+}
+
+.colored{
+    color: #ff0000;
+}
+
+.box{
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5pt;
+    box-shadow: 0 0 10pt rgba(0, 0,0,0.5);
+    padding: 0 5px;
+    background-color: red;
+    margin: 2px;
+}

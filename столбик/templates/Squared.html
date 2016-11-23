@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>столбик</title>
+
+</head>
+<body>
+    <form action="/" method="post">
+		<div align="center"><input type="text" name="textt"></div>
+		<div align="center"><input type="submit" value="стобик"></div>
+    </form>
+	<table>
+    {% for url in urls %}
+    <tr>
+        <td>{{url[0]}}</td>
+        <td>{{url[1]}}</td>
+        </tr>
+    {% endfor %}
+	</table>
+
+
+</body>
+</html>
